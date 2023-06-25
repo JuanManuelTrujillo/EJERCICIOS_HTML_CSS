@@ -1,0 +1,57 @@
+*{
+    margin: 0;
+    padding: 0;
+    box-sizing: border-box;
+    font-family: 'Times New Roman', Times, serif;
+}
+body{
+    background: rgba(49, 206, 55, 0.762);
+    background-size: cover;
+}
+nav{
+    max-width: 900px;
+    margin: auto;
+    background-color: #766d6d;
+    font-size: 20px;
+    margin-top: 50px
+}
+/*Desde aqui es para el menu desplegable*/
+
+.menu-h{
+    list-style: none;
+    display: flex;
+    justify-content: space-around;
+    
+
+}
+.menu-h li a{
+    display: block;
+    padding: 15px 20px;
+    color: white;
+    text-decoration: none;
+  
+
+}
+.menu-h li:hover{
+    background-color: rgb(29, 180, 217);
+}
+
+.menu-v{
+    position: absolute;
+    display: none;
+    list-style: none;
+    width: 200px;
+    background-color: rgb(39, 37, 37);
+    
+}
+.menu-h li:hover .menu-v{
+    display: block;
+}
+.menu-v li:hover{
+    background-color: rgb(227, 23, 23);
+}
+.menu-v li a{
+    display: block;
+    color: white;
+    padding: 15px 15px 15px 20px;
+}

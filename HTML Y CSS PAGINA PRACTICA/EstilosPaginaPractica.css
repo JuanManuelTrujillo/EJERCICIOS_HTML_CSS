@@ -1,0 +1,128 @@
+*
+{
+    margin: 0;
+    padding: 0;
+    box-sizing: border-box;
+}
+
+body
+{
+    background: rgb(122,27,212);
+    background: linear-gradient(90deg, rgba(122,27,212,1) 41%, rgba(89,115,245,1) 100%);
+    width: 100%;
+    height: 100%;
+
+}
+
+#contenedor
+{
+ 
+    height: 70%;
+    display: flex;
+    gap: 20px;
+    padding: 20px;
+   
+}
+
+#contenedor1
+{
+    
+    width: 50%;
+    height: 700px;
+}
+
+#contenedor2
+{
+ 
+    width: 50%;
+    height: 700px;
+    
+}
+
+header
+{
+    height: 100px;
+    text-align: center;
+    color: white;
+    font-size: 20px;
+    display: flex;
+    justify-content: space-between;
+    align-items: center;
+    padding: 0px 40px ;
+    height: 100px;
+    text-align: center;
+}
+
+header nav ul
+{
+    display: flex;
+    gap: 20px;
+    list-style: none;
+}
+
+header nav a
+{
+    color: white;
+    text-decoration: none;
+}
+
+header div button
+{
+    background-color: blueviolet;
+    color: white;
+    padding: 15px 5px;
+    border: none;
+    border-radius: 8px;
+    cursor: pointer;
+    font-size: 1rem;
+    font-weight: bold;
+    text-transform: uppercase;
+}
+
+img
+{
+    max-height: 80%;
+    object-fit: contain;
+}
+
+footer 
+{
+    height: 10vh;
+    display: flex;
+    margin: 0px auto;
+    justify-content: space-between;
+    width: 86%;
+    color: white;
+}
+
+.iconos
+{
+    width: 15%;
+    margin: 2px;
+}
+
+#subt1
+{
+    color: white;
+    font-size: 45px;
+    font-family: Arial, Helvetica, sans-serif;
+}
+
+#parrafo
+{
+    color: white;
+    font-size: 30px;
+}
+
+.iconos2
+{
+    width: 50%;
+    margin: 2px;
+}
+
+#botom
+{
+    border-radius: 1em;
+    width: 15%;
+    height: 8%;
+}

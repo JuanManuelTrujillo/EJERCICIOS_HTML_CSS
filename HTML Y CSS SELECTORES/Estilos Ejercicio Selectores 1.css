@@ -1,0 +1,41 @@
+body
+{
+    margin: 20 auto;
+    width="400"; 
+    height="240";
+}
+h1
+{
+    color: black;
+    text-align: center;
+    background-color: rgb(153, 222, 231);
+    max-width:700px;
+}
+
+#subtitulo1
+{
+    color: rgb(238, 238, 244);
+    background-color: rgb(72, 182, 68);
+	max-width:160px;
+	
+}
+
+#subtitulo2
+{
+    color: rgb(238, 238, 244);
+    background-color: rgb(164, 101, 215);
+    max-width:160px;
+
+}
+
+.estilo1
+{
+    color: rgb(238, 238, 244);
+    background-color: rgb(220, 145, 88);
+	max-width:160px;
+}
+
+*
+{
+    color: blue;
+}

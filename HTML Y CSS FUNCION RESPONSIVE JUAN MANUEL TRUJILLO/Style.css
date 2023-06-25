@@ -1,0 +1,114 @@
+/*Reset*/
+*{
+    margin: 0;
+    padding: 0;
+    font-family: Arial, Helvetica, sans-serif;
+}
+
+/*Header*/
+header{
+    height: 100px;
+    background: #2C3E50;
+    padding: 0 50px;
+    color: #fff;
+    display: flex;
+    justify-content: space-between;
+    align-items: center;
+    /*se define altura, color de fondo, padding para centrar,
+    el color del texto, ordenar con flex, centramos con el justify  
+    para que queden separados asignamos altura*/
+}
+
+.logo{
+    text-transform: uppercase;
+    color: #f1780f;
+    font-weight: 200;
+    /*Asignamos mayúsculas con el text transform, color y definimos el fondo
+    para que no sea tan grande*/
+    }
+    
+.menu a{
+    color: #fff;
+    text-transform: uppercase;
+    text-decoration: none;
+    padding: 0 10px;
+    transition: 0.4s;
+    /* los a que hay dentro es decir los enlaces, asignamos mayúsculas y 
+    quitamos el subrayado con el text-decoration, asignamos margenes y una
+    transición*/
+} 
+
+.mostrar-menu,
+.esconder-menu{
+    font-size: 30px;
+    cursor: pointer;
+    display: none;
+    transition: 0.4s;
+    /* Para los botones: Hamburguesa y la X, asignamos el tamaño con font 
+    size, asignamos un cursor pointer, display none: dado que requerimos
+    que sea vea en la versión responsive y una transición  */
+}
+
+.mostrar-menu{
+    order:1;
+    /*Ordenamos*/
+}
+
+.menu a:hover,
+.mostrar-menu:hover,
+.esconder-menu:hover{
+    color: #F1C40F;
+    /* a las a dentro del menú que tenga un color no un background*/
+}   
+
+#check{
+
+    display: none;
+    /*para desaparecer y que sólo aparezca en la versión responsive*/
+}
+
+/*Responsive*/
+@media(max-width: 768px){
+    /*header*/
+    .mostrar-menu,
+    .esconder-menu{
+        display: block;
+        }
+    .menu{
+        position: fixed;
+        width: 100%;
+        height: 100vh;
+        background: #2C3E50;
+        right: -100%;
+        top:0;
+        text-align: center;
+        padding: 100px 0px;
+        z-index: 100;
+        transition: 0.8s;
+        /*asignamos posición, asignamos width para que ocupe todo, height o altura
+        de 100vh para que el 100*100 desde cualquier dispositivo, un right dado que 
+        queremos que se vea desde la derecha de -100%, un top de 0 para que se vea todo
+        text center para que quede centrado, un padding para arriba y abajo, un z-index
+        de 100 en caso de que hayan otros elementos y no queden sobrepuestos o se pisen
+        y una transición*/
+        }
+        .menu a{
+            display: block;
+            padding: 20px;     
+            /*       asignamos un padding para que no queden tan cerca*/
+        }
+        .esconder-menu{
+            position: absolute;
+            top: 40px;
+            right: 40px;     
+            /*asignamos la posición absolute para desaparecerla y subir la
+             x con el top y right*/       
+        }
+        #check:checked ~ .menu{
+            right: 0;
+            /*Cuando el selector esté checkeado y todos los elementos de este check
+            ~ (alt+126) para asignar el rigth de 0*/
+        }   
+         }    
+        
+        

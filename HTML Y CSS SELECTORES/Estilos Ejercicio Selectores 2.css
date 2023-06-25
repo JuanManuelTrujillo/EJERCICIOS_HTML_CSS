@@ -1,0 +1,36 @@
+.lista1
+{
+    list-style-type: none;
+}
+
+#lista2
+{
+    list-style-type: decimal;
+
+}
+
+.lista3
+{
+    list-style-type: circle;
+}
+
+#lista4
+{
+    list-style-type: armenian;
+}
+
+.lista5
+{
+    list-style-type: square;
+   
+}
+
+#cuadro
+{
+    border:black ;
+    width: 200px ;
+    padding: 30px ;
+    background-color: rgb(108, 240, 227);
+    font-size: 23px;
+
+}
